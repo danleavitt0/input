@@ -21,7 +21,7 @@ function render ({props, state, children, local}) {
       message={error}
       {...props}
       onInvalid={[props.onInvalid, local(invalidate)]}
-      donChange={[props.onChange, local(clearInvalid)]} />
+      onChange={[props.onChange, local(clearInvalid)]} />
   )
 }
 
